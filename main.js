@@ -27,6 +27,7 @@ database.ref("notes/").on("child_added", (snapshot)=>{
     clone.querySelector("h1").textContent = data.header;
     clone.querySelector("div").textContent = data.description;
     app.appendChild(clone);
+    console.log("TEST");
 });
 
 // listen for removal of data child_removed
