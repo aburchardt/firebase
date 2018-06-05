@@ -15,11 +15,11 @@
     <form action="">
         <label>
             Header:
-            <input type="text" name="header" id="form_header">
+            <input required minlength="2" maxlength="16" placeholder="Header" type="text" name="header" id="form_header">
         </label>
         <label>
                 Description:
-                <textarea name="description" id="form_description" cols="30" rows="10"></textarea>
+                <textarea maxlength="600" name="description" id="form_description" cols="30" rows="10"></textarea>
             </label>
             <input type="submit" value="Add to google">
     </form>
@@ -34,6 +34,20 @@
                 <button class="delete">Delete</button>
             </footer>
         </article>
+    </template>
+
+    <template id="editFormTemplate">
+        <form action="">
+            <label>
+                Header:
+                <input required minlength="2" maxlength="16" placeholder="Header" type="text" name="header">
+            </label>
+            <label>
+                    Description:
+                    <textarea maxlength="600" name="description" id="form_description" cols="30" rows="10"></textarea>
+                </label>
+                <input type="submit" value="Add to google">
+        </form>
     </template>
 
 
